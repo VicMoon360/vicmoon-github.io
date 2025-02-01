@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BabySitter San</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .services, .contact {
+            margin-bottom: 40px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact form input, .contact form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact form button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Babá Profissional</h1>
+        <p>Babá de 1 a 5 anos</p>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <a href="#home">Início</a>
+        <a href="#services">Serviços</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div class="banner">
+        <img src="San.png" alt="Banner do Site" style="width:100%;">
+    </div>
+    <section id="home">
+        <h2>Bem-vindo ao BabySitter San</h2>
+        <p>Ofereço serviço de cuidados para seus filhos com conforto d uma profissional.</p>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="services" class="services">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Cuidados diários para crianças</li>
+            <li>Babá de sábado ao domingo</li>
+            <li>Acompanhamento pedagógico</li>
+            <li>Auxílio no desinvolvimento</li>
+            <li>Serviços seguro por Profissional</li>
+        </ul>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact" class="contact">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="post">
+            <input type="text" name="nome" placeholder="Seu Nome" required>
+            <input type="email" name="email" placeholder="Seu E-mail" required>
+            <input type="tel" name="telefone" placeholder="Seu Telefone">
+            <textarea name="mensagem" rows="5" placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Babá Profissional. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
